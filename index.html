@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla Cars</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/tesla.ico" type="image/x-icon">
+</head>
+<body>
+    
+    <section>
+        <div class="circle">
+        </div>
+        <header>
+                <a href="index.html"><img id="logoo" class="logo" src="img/logo.tesla.png" alt=""></a>
+                <nav id="navbar">
+                    <ul>
+                        <li> <a class="menun menun1" href="index.html">Home</a></li>
+                        <li> <a class="menun menun2" target="_blank" href="https://shop.tesla.com/">Shop</a></li>
+                        <li> <a class="menun menun3 target="_blank" href="https://auth.tesla.com/oauth2/v1/authorize?redirect_uri=https%3A%2F%2Fwww.tesla.com%2Fteslaaccount%2Fowner-xp%2Fauth%2Fcallback&response_type=code&client_id=ownership&scope=offline_access%20openid%20ou_code%20email&audience=https%3A%2F%2Fownership.tesla.com%2F&locale=en-US">Account</a></li>
+                        <li> <a class="menun menun4" target="_blank" href="https://www.tesla.com/support">Support</a></li>
+                    </ul>
+                </nav>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just a car<br> It's a <span>Tesla</span></h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor eligendi doloribus provident repudiandae expedita eveniet nobis animi officiis earum quasi, qui quidem numquam facere nihil repellendus nulla quos ducimus saepe.</p>
+                <a target="_blanket" href="https://www.tesla.com/about">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="img/TeslaBlack.png" alt="" class="blackTesla">
+            </div>
+        </div> 
+        <ul class="thumb">
+            <li><img src="img/thumb1.png" onclick="imgSlider('img/TeslaBlack.png');changeCircleColor('#9D9172')"></li>
+            <li><img src="img/thumb2.png" onclick="imgSlider('img/GrayTesla.png');changeCircleColor('#606661')"></li>
+        </ul> 
+        <ul class="sci">
+            <li><a  target="_blank" href="https://www.instagram.com/teslamotors/"><img src="img/instagram (1).png" alt=""></a></li>
+            <li><a target="_blank" href="https://pt-br.facebook.com/TeslaMotorsCorp/"><img src="img/facebook.png" alt=""></a></li>
+            <li><a target="_blank" href="https://twitter.com/Tesla"><img src="img/twitter.png" alt=""></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.blackTesla').src = anything;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
